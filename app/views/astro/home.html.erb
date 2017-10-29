@@ -1,0 +1,442 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Astro</title>
+
+    <meta charset="utf-8" />
+       <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+      
+
+ <%= stylesheet_link_tag    "main", media: "all", "data-turbolinks-track" => true %>
+
+
+    <style>
+        body{
+  padding: 0;
+    margin: 0;
+}
+        .nav ul li a {
+            line-height: 20px;
+            font-size: 18px;
+        }
+
+        button{
+            vertical-aign:center;
+            
+        }
+        input {
+            background: #575757 !important;
+            color: #fff !important;
+        }
+
+        .content-text {
+            margin-top: 15%;
+        }
+        #parrot_img{
+            width:30%;
+        }
+        #logo_img{
+            width:20vw;
+        }
+        .scroll_nav li a{
+            font-size: 80%;
+        }
+        .navbar{
+            margin:0;
+        }
+        .navbar1{
+        
+             top: -1000px;
+    }
+
+    </style>
+</head>
+
+<body>
+    <header class="navbar1 container-fluid">
+        <div class="row">
+            <div class="col-md-2 navbar-brand">PanditJiAstro</div>
+            <div class="col-md-10">
+
+                <ul class="scroll_nav nav navbar-nav ">
+                    <li class="active"><a href="index.html">Home<span class="sr-only">(current)</span></a></li>
+                     <li><a href="posts">BLOG</a></li>
+                    <li><a href="index2.html">Hindi Astro</a></li>
+                    
+                    <li class="dropdown">
+                        <a class="dropdown-toggle">Tools<span class="caret"></span></a>
+
+                        <ul class="dropdown-menu">
+                            <li><a href="#ask">Ask To Parrot</a></li>
+
+                            <li><a href="#a_forcaster">Ascendant Forcaster</a></li>
+
+                        </ul>
+
+                    </li>
+                    <li><a href="indexp.html">Product</a></li>
+                    <li class="active"><a>Contact : +91-981192292</a></li>
+
+                </ul>
+            </div>
+
+        </div>
+
+
+
+    </header>
+
+    <nav class="navbar navbar-default navbar-inverse">
+        <div class="container-fluid">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+                <a class="navbar-brand"></a>
+            </div>
+
+
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav">
+                    <li class="active"><a href="index.html">Home<span class="sr-only">(current)</span></a></li>
+                    <li><a href="indexp.html">Products</a></li>
+                    <li><a href="index2.html">Hindi Astro</a></li>
+                    <li><a href="posts">BLOG</a></li>
+
+                    <li class="dropdown">
+                        <a class="dropdown-toggle">Tools<span class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="#ask">Ask To Parrot</a></li>
+
+                            <li><a href="#a_forcaster">Ascendant Forcaster</a></li>
+
+
+                        </ul>
+                    </li>
+                </ul>
+
+                <ul class="nav navbar-nav navbar-right">
+                    <li class="active"><a>Contact : +91-981192292</a></li>
+
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container-fluid -->
+    </nav>
+
+
+
+    <div id="front">
+
+
+
+        <div class="container-fluid">
+            <div class="row">
+
+                <div class="col-xs-10 col-md-9">
+                    <!--              <img src="../../assets/images/logo.png" style="width:20vw;">-->
+
+                    <%= image_tag "logo.png",alt: "LOGO",id: 'logo_img' %>
+                </div>
+
+                <div class="socc col-xs-2 col-md-3">
+                    <ul>
+                        <li id="bounce0" class="bounce_icon socc_anim" href="#"><a class="" href="#"><i class="fa fa-google-plus-square"></i></a></li>
+
+                        <li id="bounce1" class="bounce_icon" href="#"><a class="" href="#"><i class="fa fa-linkedin-square"></i></a></li>
+                        <li id="bounce2" class="bounce_icon" href="#"><a class="" href="#"><i class="fa fa-facebook-square"></i></a></li>
+
+                    </ul>
+                </div>
+
+            </div>
+        </div>
+
+
+
+
+        <div id="front1">
+            <div id="dp">
+                <%=image_tag("panditji.png", alt: "PanditJi")%>
+            </div>
+
+
+            <div id="chakra">
+                <%= image_tag("image12.png", :alt => " ") %>
+            </div>
+
+        </div>
+
+    </div>
+
+
+
+
+
+
+
+
+
+
+    <div class="container-fluid" style="background:#bc382e;">
+
+        <div class="text-center" style="margin-bottom:2em;">
+            <%= image_tag "astrologer.png",alt: "Responsive image",id: 'pimg' ,class:  'img-responsive center-block',html: {width: "35%" }%>
+
+                <!--            <img id="pimg" src="../../assets/images/astrologer.png" class="img-responsive center-block" style="width:35%;" alt="">-->
+
+
+
+
+                <h2 class="text-center" style="color:#fff;font-family: arial;font-style: normal;font-weight: bold;font-variant: normal;line-height: 16px;font-size:40px;font-weight:bold;">Ask To Pandit Ji</h2>
+                <p class="text-center">Have Any Query Or You Want To Cunsult Something Take An Advise From Pandit Ji<br>Click The Below Chat Button To Do A Conversation With Pandit Ji ,He Will Give You His Valuable Cunsultancy</p>
+
+                <button type="button" id="fire_chat" class="btn btn-primary btn-lg center-block" onclick="tawk()"><span>Chat</span></button>
+
+
+
+
+
+        </div>
+    </div>
+
+
+
+    <div id="ask" class="container-fluid" style="background:#388d80;">
+        <div class="row">
+            <div class="left_content tool" class=" center-block text-center col-md-6">
+
+                <div class="" ondragstart="return false" onselectstart="return false">
+
+                    <%= image_tag "parrot1600.png",alt: "Ask Parrot",class: "wres center-block img-responsive",id: 'parrot_img'%>
+
+                        <!--                    <img height="127" src="../../assets/images/parrot1600.png" alt="Ask Parrot"  width="103" class="wres center-block img-responsive">-->
+                        <p class="">The Psychic Parrot</p>
+                        <p><b>Please enter question to get respond</b></p><br>
+                        <form id="parrot-form" name="parrotform">
+                            <input type="Text" name="parrot1" class="form-control center-block" onkeypress="return numberOnly(this, event)" onfocus="rfparrot()" onpaste="return false" autocomplete="off" oncopy="return false" ondrag="return false" ondrop="return false"><br><br>
+
+                            <button id="parrot-btn" type="button" name="askbutton" class="btn btn-primary btn-lg" onclick="parrotastrology(parrotform)">Ask me!</button>
+                        </form>
+                        <br>
+                        <span style="font-style: normal;font-weight: bold;font-size:20px;" id="parrot4"></span>
+                        <br><br><br>
+
+                </div>
+
+
+
+
+
+
+            </div>
+
+            <div class="center-block text-center content-text col-md-6">
+                <p>Here We Present The Psychic Parrot Of Pandit Ji Astro Ask Your Query To Him,He May Reply You</p>
+            </div>
+
+        </div>
+    </div>
+
+
+
+
+
+
+    <div id="a_forcaster" class="content" style="background:rgb(47,69,79);">
+
+        <div class="left_content">
+            <p>Find astrology ascendant reading for career. Know which gemstone is good for you. Know, whenever your luck will be with you. Know who is lucky God or Goddess according to Indian astrology. .
+            </p>
+        </div>
+
+
+        <div class="right_content">
+
+            <div style="border:None;" class="w-noselect wdiv-740 w-center">
+                <div class="wdiv-340 wdiv1">
+                    <form name="widgetzastroascendantpredictor">
+                        <p class="w-wtitle1">Ascendant Forecaster</p>
+                        <img height="110" src="../../assets/tool_img/numerology.jpg" rel="nofollow" alt="Ascendant Forecaster" title="Ascendant Forecaster" width="110" class="wres"><br>
+                        <center><span class="wlable2">Your Ascendant Sign</span>
+                            <select style="width:33%" name="yourascendant" class="winput" onfocus="rf8()">
+                                    <option value="x" selected="">Select</option>
+                                    <option value="1">Aries</option>
+                                    <option value="2">Taurus</option>
+                                    <option value="3">Gemini</option>
+                                    <option value="4">Cancer</option>
+                                    <option value="5">Leo</option>
+                                    <option value="6">Virgo</option>
+                                    <option value="7">Libra</option>
+                                    <option value="8">Scorpio</option>
+                                    <option value="9">Sagittarius</option>
+                                    <option value="10">Capricorn</option>
+                                    <option value="11">Aquarius</option>
+                                    <option value="12">Pisces</option></select></center><br>
+                        <input type="text" name="lname" maxlength="15" id="lname" style="display: none" value="">
+                        <input type="button" value="Generate" class="wbutton" onclick="widastroascendant()"><br><br><br>
+
+                    </form>
+                </div>
+                <div style="border:none;" class="wdiv-340">
+                    <form name="result45">
+                        <span style="font-family: Arial;line-height: 16px;color:#800080;font-size:13px;font-weight:bold;" id="ascend1"></span>
+                    </form>
+                </div>
+            </div>
+
+
+            <div style="clear:both"></div>
+
+        </div>
+    </div>
+
+
+
+
+    <!--  
+    
+     <footer style="background:#1d1f21">
+      <div class="container">
+        <p class="m-0 text-center text-white">Copyright &copy; website 2017</p>
+      </div>
+      
+    </footer>-->
+
+    <footer>
+        <div class="container">
+
+            <div class="row text-center">
+                <ul class="list-inline">
+
+                    <li>
+                        <a href="#"><i class="fa fa-facebook fa-2x"></i></a>
+                    </li>
+
+                    <li>
+                        <a href="#"><i class="fa fa-dropbox fa-2x"></i></a>
+                    </li>
+
+                    <li>
+                        <a href="#"><i class="fa fa-flickr fa-2x"></i></a>
+                    </li>
+
+                    <li>
+                        <a href="#"><i class="fa fa-github fa-2x"></i></a>
+                    </li>
+
+                    <li>
+                        <a href="#"><i class="fa fa-linkedin fa-2x"></i></a>
+                    </li>
+
+                    <li>
+                        <a href="#"><i class="fa fa-tumblr fa-2x"></i></a>
+                    </li>
+
+
+                </ul>
+            </div>
+
+            <div class="row text-center">
+                <ul class="menu list-inline">
+
+                    <li>
+                        <a href="#">Home</a>
+                    </li>
+
+                    <li>
+                        <a href="#">About</a>
+                    </li>
+
+                    <li>
+                        <a href="#">Blog</a>
+                    </li>
+
+                    <li>
+                        <a href="#">Gallery</a>
+                    </li>
+
+                    <li>
+                        <a href="#">Contact</a>
+                    </li>
+
+                </ul>
+            </div>
+
+
+        </div>
+        <div class="row text-center" style="width:100%;">
+            <p class="m-0 text-center text-white">Doveloped By:<a href="http://www.darhiwala.in">Anurag@darhiwala.in</a><br>Copyright &copy; website 2017</p>
+        </div>
+    </footer>
+
+
+
+    <script type="text/javascript">
+        var k;
+        k = 0;
+
+
+
+
+        function bounce() {
+            var f;
+            f = k % 3;
+            var arr = [1, 2, 0];
+
+
+
+            var d1 = document.querySelector('#bounce' + f);
+            var d2 = document.querySelector('#bounce' + arr[f]);
+
+
+
+            if (d1.classList.contains('socc_anim')) {
+                d1.classList.remove('socc_anim');
+
+            }
+            d2.classList.add('socc_anim');
+
+
+
+            k++;
+
+        };
+
+
+        setInterval(bounce, 3000);
+     
+function tawk(){
+    
+    var change = document.getElementById("fire_chat");
+                change.innerHTML="CHAT...";
+     var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
+        (function(){
+        var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
+        s1.async=true;
+        s1.src='https://embed.tawk.to/59ca5cfac28eca75e4622634/default';
+        s1.charset='UTF-8';
+        s1.setAttribute('crossorigin','*');
+        s0.parentNode.insertBefore(s1,s0);
+        })();
+};
+    </script>
+
+
+
+
+
+
+
+</body>
+
+</html>

@@ -1,0 +1,33 @@
+<%=render 'shared/error',obj: @comment %>
+
+    <div class="row">
+        <div class="col-md-12 col-sm-offset-1">
+
+            <%= form_with(model: comment, local: true) do |form| %>
+
+
+                <div class="form-group field">
+                    <%#= form.label :Name,class: "col-sm-2 control-label" %>
+                        <div class="col-sm-10">
+                            <%= form.text_field :title, id: :comment_title ,class: "form-control",placeholder: "Name" %>
+                        </div>
+                </div>
+                        <div class="form-group field">
+                            <%#= form.label :body,class: "col-sm-2 control-label" %>
+                                <div class="col-sm-10">
+                                    <%= form.text_area :body, id: :comment_body,class: "form-control",placeholder: "Body" %>
+                                </div>
+                        </div>
+
+                        <div class="form-group actions">
+                            <div class="col-sm-10">
+                                <%= form.submit class: "btn btn-success" %>
+
+                            </div>
+                        </div>
+                       
+                        <% end %>
+
+                
+        </div>
+</div>

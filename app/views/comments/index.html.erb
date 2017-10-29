@@ -1,0 +1,25 @@
+<%= stylesheet_link_tag 'custom', media: 'all' %>
+<%= render 'astro/navbar' %>
+<p id="notice"><%= notice %></p>
+
+
+<h1>Comments</h1>
+
+    
+<% @comments.each do |comment| %>
+<div class="row">
+    <div class="col-xs-8 col-xs-offset-2">
+        <div class="well well-lg">
+            <div class="article-title">
+                <h4><%=link_to comment.title,comment  %></h4>
+            </div>
+            <div class="article-body">
+              <%=truncate(comment.body,length: 300)  %>
+            </div>
+        </div>
+    </div>
+</div>
+  <% end %>
+ 
+<br>
+<%= render 'astro/footer' %>

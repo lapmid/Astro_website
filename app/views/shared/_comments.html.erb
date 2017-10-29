@@ -1,0 +1,21 @@
+<p id="notice"><%= notice %></p>    
+<% comment.each do |comment| %>
+<div class="row">
+    <div class="col-xs-8 col-xs-offset-2">
+        <div class="well well-lg">
+            <div class="article-title">
+                <h2><%=link_to comment.title,comment  %></h2>
+            </div>
+            <div class="article-body">
+              <%=truncate(comment.body,length: 300)  %>
+            </div>
+
+      <%#= link_to "Edit",edit_article_path(a), class: "btn btn-primary btn-xs" %>
+     <%#= link_to "Delete This Article",article_path(a),method: :delete,data: {confirm: "Are You Sure To Delete This Article ?"},class: "btn btn-danger btn-xs"  %>
+        </div>
+    </div>
+</div>
+  <% end %>
+ 
+<br>
+
